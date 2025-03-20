@@ -35,3 +35,26 @@ Year:  2026
 '''
 
 ###################################
+'''
+str() and repr() functions are used to obtain string representations of objects.
+if str() function is mention in the program python will use str() function instead of repr() function. 
+__repr__() if we need detailed information for debugging
+'''
+class Car:
+    year:int
+    def __init__(self,brand="BMW",model="X7",year=2025):
+        print("init function will be called automatically when an object is created")
+        self.brand =brand
+        self.model=model
+        self.year =year
+
+
+    def __str__(self):
+        return f"I want {self.brand} with {self.year}"
+
+    def __repr__(self):
+        return f"Car(Brand={self.brand},Model={self.brand})"
+
+car=Car()
+print(car)
+print(repr(car))
