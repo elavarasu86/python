@@ -4,6 +4,14 @@
 # Instance methods - Best for operations on instances of the class (objects)
 # Static methods - Best for utility functions that do not need access to class data
 
+'''
+It is not bound to either the class or the instance.
+It does not take any implicit first argument.
+It cannot access or modify class or instance state.
+It is essentially a regular function within the class namespace.
+It is defined using the @staticmethod decorator. 
+'''
+
 class Employee:
 
     def __init__(self, name, position):
