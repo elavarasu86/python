@@ -4,6 +4,13 @@
 #  Instance methods = Best for operations on instances of the class (objects)
 #  Static methods = Best for utility functions that do not need access to class data
 #  Class methods = Best for class-level data or require access to the class itself
+'''
+It is bound to the class and not the instance of the class.
+It takes the class itself as the first argument, conventionally named cls.
+It can access and modify class-level attributes.
+It cannot access instance-specific attributes directly.
+It is defined using the @classmethod decorator. 
+'''
 
 class Student:
 
