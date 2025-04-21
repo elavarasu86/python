@@ -8,3 +8,16 @@ except FileNotFoundError:
 
 #Return's boolean value. True is closed. False is Open.
 #print(file.closed)
+
+
+######################################################################################
+fileName = "D:\\Studies\\InputFil.txt"
+
+try:
+    with open(fileName, "r") as file:  # With Statement will return an object(file).
+        placeHolder = file.read()
+        print(placeHolder)
+except FileNotFoundError:
+    print("File is not available yet.")
+except PermissionError:
+    print("You don't have permission to read")
