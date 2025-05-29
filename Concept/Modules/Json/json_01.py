@@ -13,3 +13,8 @@ with open('data.json','r') as file:
     
 #prints json file as it reads.
 print(data)
+
+for item in data['emp_details']:
+    print(f"Name: {item['emp_name']}")
+    print(f"Email: {item['email']}")
+    print(f"JobProfile: {item['job_profile']}")
