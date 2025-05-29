@@ -1,0 +1,19 @@
+{
+	"emp_details""[
+	{
+		"emp_name": "John Doe",
+		"email": "john.doe@example.com",
+		"job_profile": "Software Developer"
+	},
+	{
+		"emp_name": "Jane Smith",
+		"email": "jane.smith@example.com",
+		"job_profile": "Project Manager"
+	},
+	{
+		"emp_name": "Emily Johnson",
+		"email": "emily.johnson@example.com",
+		"job_profile": "UX Designer"
+	}
+	]
+}
